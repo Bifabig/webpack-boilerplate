@@ -11,10 +11,6 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   module: {
     rules: [
       {
@@ -26,4 +22,5 @@ module.exports = {
   optimization: {
     runtimeChunk: 'single',
   },
+  mode: 'development',
 };
